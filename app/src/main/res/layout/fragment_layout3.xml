@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <TextView
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/random_text"
+        android:textColor="@color/black"
+        android:textSize="40dp"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/random_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="select range of number"/>
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_below="@+id/random_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 to 10"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+
+
+        android:background="@drawable/btn"
+        android:id="@+id/random_btn"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 to 100"
+        android:textColor="@color/white"
+
+        android:layout_marginLeft="10dp"
+
+        android:background="@drawable/btn"
+        android:id="@+id/random_btn2"
+        />
+    </LinearLayout>
+</RelativeLayout>

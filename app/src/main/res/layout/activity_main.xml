@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/Theme.Random_TDN.AppBarOverlay">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:orientation="horizontal"
+          android:layout_gravity="center_horizontal"
+          android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="wrap_content"
+
+           android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/pp"
+
+            android:src="@drawable/ic_baseline_privacy_tip_24"
+            android:contentDescription="TODO" />
+       </LinearLayout>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_marginLeft="200dp"
+              android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/exit"
+
+            android:src="@drawable/ic_baseline_exit_to_app_24"/>
+          </LinearLayout>
+      </LinearLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BCB9BA" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+
+
+
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+</RelativeLayout>
